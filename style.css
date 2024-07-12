@@ -89,6 +89,10 @@ header img {
     flex-flow: column;
 }
 
+.text{
+    text-align: center;
+}
+
 .container img {
     max-width: 300px;
 }
