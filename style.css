@@ -216,51 +216,16 @@ footer p {
     font-size: 32px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.twitter svg {
+    margin-top: 30px;
+    width: 200px;
+    height: auto;
 }
 
-input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-input[type="button"] {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #F05A24;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: "Chakra Petch", sans-serif;
+.twitter svg path{
+    color: #F05A24;
 
 }
-
-input[type="button"]:hover {
-    background-color: #0056b3;
-}
-
-input[type="button"]:active {
-    background-color: #003f7f;
-}
-
 
 @media (width <=1024px) {
     .hide-xs {
