@@ -19,8 +19,9 @@ html {
 header {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-flow: column;
-
+    min-height: 100vh;
     overflow: hidden;
     background-color: #f1f2f1;
 }
@@ -39,6 +40,7 @@ header {
     display: flex;
     padding: 30px;
     height: 100%;
+    max-width: 1024px;
 }
 
 nav {
@@ -148,6 +150,8 @@ h3 {
     display: flex;
     flex-flow: column;
     width: 100%;
+    margin: 0 auto;
+    max-width: 320px;
     gap: 15px;
 
 }
@@ -272,6 +276,10 @@ input[type="button"]:active {
 
 
 @media (width > 1024px) {
+
+    .buttons{
+        margin: 0;
+    }
 
     .grid {
         display: grid;
