@@ -17,7 +17,6 @@ html {
 }
 
 header {
-    height: 100vh;
     display: flex;
     align-items: center;
     flex-flow: column;
@@ -33,10 +32,10 @@ header {
     padding: 30px 0;
     z-index: 2;
     max-width: 768px;
-    
+
 }
 
-.grid{
+.grid {
     display: flex;
     padding: 30px;
     height: 100%;
@@ -104,7 +103,8 @@ h2 {
 
 header img {
     width: 100%;
-    max-width: 330px;    /* height: 330px; */
+    max-width: 330px;
+    /* height: 330px; */
     object-fit: cover;
 }
 
@@ -262,7 +262,7 @@ input[type="button"]:active {
         display: none !important;
     }
 
-    .grid{
+    .grid {
         display: flex;
         flex-flow: column;
         justify-content: space-around;
@@ -273,16 +273,24 @@ input[type="button"]:active {
 
 @media (width > 1024px) {
 
-.grid{
-   
-    justify-content: end;
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: end;
+        grid-gap: 40px;
+    }
 
 
-}
+    header {
+padding-bottom: 50px;
+    }
 
-.grid img{
-    display: none;
-}
+    .grid img {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+    }
+
     nav {
         padding: 30px;
     }
@@ -290,11 +298,8 @@ input[type="button"]:active {
     header .cta-container {
         margin: 0 30px;
         height: 100%;
-        background-image: url(assets/img/bg.png);
-        background-size: cover;
-            background-position: bottom;
-            background-position: bottom;
-        background-position-y: 20px;
+        grid-area: 1;
+
     }
 
     h1 {
@@ -310,8 +315,8 @@ input[type="button"]:active {
     }
 
     header .cta-container {
-        justify-content: end;  
-      }
+        justify-content: end;
+    }
 
 
 
