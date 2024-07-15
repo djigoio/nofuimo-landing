@@ -26,9 +26,27 @@ header {
     background-color: #f1f2f1;
 }
 
+.hero-img-mobile{
+    height: 100%;
+}
+
+.hero-img-mobile img{
+    width: 90%;
+    position: absolute;
+}
+
 .cta-container {
     justify-content: end;
     padding: 30px;
+    z-index: 2;
+    max-width: 768px;
+    
+}
+
+.grid{
+    display: flex;
+    padding: 30px;
+    height: 100%;
 }
 
 nav {
@@ -38,6 +56,11 @@ nav {
     display: flex;
     align-items: center;
     padding: 15px;
+}
+
+nav .container {
+    width: 100%;
+    align-items: start;
 }
 
 .logo {
@@ -90,14 +113,13 @@ h2 {
 }
 
 header img {
-    width: 300px;
-    height: 330px;
+    width: 100%;
+    max-width: 700px;
+    /* height: 330px; */
     object-fit: cover;
-    object-position: 75% 0%;
 }
 
 .grid {
-    display: grid;
     align-items: center;
 }
 
@@ -170,7 +192,7 @@ header .cta-container {
     flex-flow: column;
     height: 100%;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
 footer {
@@ -252,12 +274,16 @@ input[type="button"]:active {
     .hide-xs {
         display: none !important;
     }
+
 }
 
 
 @media (width > 1024px) {
 
+.grid{
 
+
+}
     nav {
         padding: 30px;
     }
@@ -279,30 +305,23 @@ input[type="button"]:active {
     }
 
     header .cta-container {
-        justify-content: end;
-    }
+        justify-content: center;  
+      }
 
     .hero-img {
-        position: relative;
-        bottom: 555px;
-        right: -60px;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 460px;
+        
     }
 
-    .hero-img img {
-        position: absolute;
-        height: auto;
-        top: 180px;
-        right: 210px;
-        max-width: 330px;
-        width: auto;
-    }
 
     .gradient {
         display: none;
     }
 
     .hero-img .secondary {
-        right: 30px;
+        right: 120px;
         z-index: 0;
     }
 }
