@@ -21,7 +21,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    min-height: 100vh;
+    min-height: 90vh;
     overflow: hidden;
     background-color: #f1f2f1;
 }
@@ -75,7 +75,7 @@ h1 {
 
 h1 .swipe {
     font-style: italic;
-    font-weight: normal
+    font-weight: normal;
 }
 
 h1 .meet {
@@ -115,6 +115,9 @@ header img {
     align-items: center;
 }
 
+
+
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -145,7 +148,7 @@ h3 {
     color: #7A8194;
 }
 
-.mockup img {}
+.mockup img {margin-bottom: -15px;}
 
 .buttons {
     display: flex;
@@ -263,6 +266,7 @@ padding-bottom: 50px;
         margin: 0 auto;
         width: 100%;
         max-width: 600px;
+        margin-bottom: -38px;
     }
 
     nav {
@@ -281,7 +285,7 @@ padding-bottom: 50px;
     }
 
     h2 {
-        font-size: 40px;
+        font-size: 38px;
     }
 
     .paragraph {
